@@ -25,17 +25,17 @@
 </head>
 
 <body>
-    <header class="top-bar bg-gray-500 text-white h-20">
+    <header class="top-bar bg-gray-700 text-white h-20">
         <div class="container mx-auto h-full flex">
-            <a href="/" class="top-bar__logo flex items-center">
+            <a href="#" class="top-bar__logo flex items-center">
                 <span><i class="far fa-lemon"></i></span>
                 &nbsp;
-                <span class="font-bold">lemon</span>
+                <span class="font-bold">LEMON IT</span>
             </a>
 
             <div class="flex-grow"></div>
 
-            <div class="bg-red-300">
+            <div class=" bg-red-300">
                 우측 메뉴
             </div>
         </div>
