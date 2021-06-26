@@ -1,25 +1,33 @@
 <?php
-// DB 연결
-$dbConn = mysqli_connect("127.0.0.1", "sbsst", "sbs123414", "php_simple_blog_st") or die("DB ERROR");
+$dbConn = mysqli_connect("127.0.0.1", "sbsst", "sbs123414", "php_simple_blog_st") or end("DB ERROR");
+# DB 연결
 // var_dump($dbConn);
 // exit;
 
-$sql = "
+# SQL 쿼리 불러오기
+$sql = '
 SELECT *
 FROM article
 ORDER BY id DESC
-";
+';
 
+
+# SQL 쿼리 보내기
 $rs = mysqli_query($dbConn, $sql);
 // print_r($rs);
 // exit;
 
-// while 문으로 변경
+#  while문으로 압축문 풀기
 $rows = [];
 
 while ($row = mysqli_fetch_assoc($rs)) {
   $rows[] = $row;
 }
+// print_r($rows);
+// exit;
+
+$localTime = date('m-d-Y h:i:s a', time())
+
 ?>
 
 <!DOCTYPE html>
@@ -33,15 +41,16 @@ while ($row = mysqli_fetch_assoc($rs)) {
 </head>
 
 <body>
-  <h1>article DB</h1>
-  <?php foreach ($rows as $row) { ?>
-    <div>
+  <h1>article DB 생성</h1>
+  <div>
+    <?php foreach ($rows as $row) { ?>
       번호 : <?= $row['id'] ?><br>
+      작성자 : <?= $row['writerName'] ?><br>
       제목 : <?= $row['title'] ?><br>
       시간 : <?= $row['regDate'] ?><br>
-    </div>
-    <hr>
-  <?php } ?>
+  </div>
+  <hr>
+<?php } ?>
 </body>
 
 </html>
