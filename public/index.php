@@ -25,39 +25,57 @@
 </head>
 
 <body>
-    <header class="top-bar bg-gray-700 text-white h-10">
-        <div class="container mx-auto h-full flex">
-            <a href="#" class="top-bar__logo flex items-center px-4">
-                <span><i class="far fa-lemon"></i></span>
-                <span class="font-bold">&nbsp;LEMON IT</span>
-            </a>
+    <div class="site=wrap min-h-screen flex flex-col">
+        <header class="top-bar bg-gray-700 text-white h-10 flex-shrink-0">
+            <div class="container mx-auto h-full flex">
+                <a href="/" class="top-bar__logo flex items-center px-4">
+                    <span><i class="far fa-lemon"></i></span>
+                    <span class="font-bold">&nbsp;LEMON IT</span>
+                </a>
 
-            <div class="flex-grow"></div>
+                <div class="flex-grow"></div>
 
-            <nav class="top-bar__menu-box-1">
-                <ul class="flex h-full">
-                    <li>
-                        <a href="/" class="h-full flex items-center px-4 hover:underline">
-                            <span><i class="fas fa-home"></i></span>
-                            <span class="font-bold hidden sm:block">&nbsp;HOME</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/SangWon7242" target="_blank" class="h-full flex items-center px-4 hover:underline">
-                            <span><i class="fab fa-github"></i></span>
-                            <span class="font-bold hidden sm:block">&nbsp;GITHUB</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/user/gotkdqja/videos" target="_blank" class="h-full flex items-center px-4 hover:underline">
-                            <span><i class="fab fa-youtube"></i></span>
-                            <span class="font-bold hidden sm:block">&nbsp;YOUTUBE</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                <nav class="top-bar__menu-box-1">
+                    <ul class="flex h-full">
+                        <li>
+                            <a href="/" class="h-full flex items-center px-4 hover:underline">
+                                <span><i class="fas fa-home"></i></span>
+                                <span class="font-bold hidden sm:block">&nbsp;HOME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SangWon7242" target="_blank" class="h-full flex items-center px-4 hover:underline">
+                                <span><i class="fab fa-github"></i></span>
+                                <span class="font-bold hidden sm:block">&nbsp;GITHUB</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/gotkdqja/videos" target="_blank" class="h-full flex items-center px-4 hover:underline">
+                                <span><i class="fab fa-youtube"></i></span>
+                                <span class="font-bold hidden sm:block">&nbsp;YOUTUBE</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam porro voluptatem, laborum omnis aliquam repudiandae voluptatum pariatur tempora, vero et accusamus perferendis quos cumque quis eligendi. Inventore vitae quis voluptates.
+        </main>
+
+        <footer class="bottom-bar bg-gray-700 text-white h-10 flex-shrink-0">
+            <div class="container mx-auto h-full flex justify-center">
+                <a href="/" class="top-bar__logo flex items-center">
+                    <span><i class="far fa-lemon"></i></span>
+                    <span class="font-bold">&nbsp;LEMON IT</span>
+                </a>
+                <div class="flex items-center">
+                    &nbsp;IS GOOD!
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
