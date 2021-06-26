@@ -26,7 +26,7 @@
 
 <body>
     <div class="site=wrap min-h-screen flex flex-col">
-        <header class="top-bar bg-gray-700 text-white h-10 flex-shrink-0">
+        <header class="top-bar bg-gray-700 text-white h-10 flex-shrink-0 fixed inset-0 bottom-auto">
             <div class="container mx-auto h-full flex">
                 <a href="/" class="top-bar__logo flex items-center px-4">
                     <span><i class="far fa-lemon"></i></span>
@@ -59,6 +59,7 @@
                 </nav>
             </div>
         </header>
+        <div class="h-10"></div>
 
         <main class="flex-grow">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam porro voluptatem, laborum omnis aliquam repudiandae voluptatum pariatur tempora, vero et accusamus perferendis quos cumque quis eligendi. Inventore vitae quis voluptates.
@@ -70,7 +71,7 @@
                     <span><i class="far fa-lemon"></i></span>
                     <span class="font-bold">&nbsp;LEMON IT</span>
                 </a>
-                <div class="flex items-center">
+                <div class=" font-bold flex items-center">
                     &nbsp;IS GOOD!
                 </div>
             </div>
